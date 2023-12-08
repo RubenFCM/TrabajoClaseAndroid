@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ConversorActivity.ConversorActivity"
-    android:background="#1B4049">
+    android:background="@color/background">
     <androidx.cardview.widget.CardView
         android:id="@+id/cvCantidad"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="#307D95"
+        android:backgroundTint="@color/background_component"
         android:layout_margin="16dp"
         app:cardCornerRadius="16dp"
         >
@@ -35,7 +35,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Selecciona la moneda a la que quiere convertir:"
+                android:text="@string/tvSeleccionarMoneda"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:layout_marginTop="16dp"
@@ -52,32 +52,32 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="6dp"
                     android:src="@drawable/ic_libra"
-                    android:backgroundTint="#00BCD4"
-                    app:backgroundTint="#88BBE3"/>
+                    android:backgroundTint="@color/background_button"
+                    />
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnRublo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_ruble"
-                    android:backgroundTint="#00BCD4"
+                    android:backgroundTint="@color/background_button"
                     android:layout_marginHorizontal="6dp"
-                    app:backgroundTint="#88BBE3"/>
+                    />
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnYen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="6dp"
                     android:src="@drawable/ic_yen"
-                    android:backgroundTint="#00BCD4"
-                    app:backgroundTint="#88BBE3"/>
+                    android:backgroundTint="@color/background_button"
+                    />
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnDollar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
-                    android:backgroundTint="#00BCD4"
+                    android:backgroundTint="@color/background_button"
                     android:src="@drawable/ic_dollar"
-                    app:backgroundTint="#88BBE3"/>
+                    />
             </androidx.appcompat.widget.LinearLayoutCompat>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -88,7 +88,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cvCantidad"
         app:cardCornerRadius="16dp"
-        android:backgroundTint="#307D95"
+        android:backgroundTint="@color/background_component"
         android:layout_margin="16dp"
         >
         <LinearLayout
@@ -99,7 +99,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Resultado:"
+                android:text="@string/resultado"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 />

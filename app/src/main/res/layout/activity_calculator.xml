@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CalculatorActivity.CalculatorActivity"
-    android:background="#1B4049">
+    android:background="@color/background">
     <androidx.cardview.widget.CardView
         android:id="@+id/cvSumar"
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="16dp"
-        app:cardBackgroundColor="#307D95"
+        app:cardBackgroundColor="@color/background_component"
         app:cardCornerRadius="16dp"
         >
         <LinearLayout
@@ -26,7 +26,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Introduce los números:"
+                android:text="@string/Introduce_num"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textAllCaps="true"/>
@@ -34,7 +34,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Numero 1:"
+                android:text="@string/num1"
                 android:textColor="#C3BABA"
                 android:textStyle="bold"
                 android:textAllCaps="true"
@@ -50,7 +50,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Numero 2:"
+                android:text="@string/num2"
                 android:textColor="#C3BABA"
                 android:textStyle="bold"
                 android:textAllCaps="true"
@@ -73,7 +73,7 @@
         app:cardCornerRadius="16dp"
         android:layout_margin="16dp"
         android:layout_marginVertical="60dp"
-        app:cardBackgroundColor="#307D95"
+        app:cardBackgroundColor="@color/background_component"
         app:layout_constraintBottom_toTopOf="@id/cvResult"
         >
 
@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:src="@drawable/ic_sum"
-                android:backgroundTint="#00BCD4"
+                android:backgroundTint="@color/background_button"
                 app:maxImageSize="30dp"/>
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btnRest"
@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:src="@drawable/ic_men"
-                android:backgroundTint="#00BCD4"
+                android:backgroundTint="@color/background_button"
                 app:maxImageSize="30dp"/>
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btnMult"
@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:src="@drawable/ic_cross2"
-                android:backgroundTint="#00BCD4"
+                android:backgroundTint="@color/background_button"
                 app:maxImageSize="35dp"
                 />
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -112,7 +112,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
-                android:backgroundTint="#00BCD4"
+                android:backgroundTint="@color/background_button"
                 android:src="@drawable/ic_divide2"
                 app:maxImageSize="35dp"/>
 
@@ -124,7 +124,7 @@
         android:layout_height="120dp"
         app:cardCornerRadius="16dp"
         android:layout_margin="16dp"
-        app:cardBackgroundColor="#307D95"
+        app:cardBackgroundColor="@color/background_component"
         app:layout_constraintTop_toBottomOf="@+id/cvOperaciones"
         app:layout_constraintBottom_toBottomOf="parent">
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -136,7 +136,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="resultado:"
+                android:text="@string/resultado"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textStyle="bold"/>
@@ -146,7 +146,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="Prueba"
-                android:textSize="38dp"
+                android:textSize="38sp"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 />

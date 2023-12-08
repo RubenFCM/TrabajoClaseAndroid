@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">My App Ruben</string>
 
+    <!--Main-->
+    <string name="calculos">cálculos</string>
+    <string name="conversor">conversor</string>
+    <string name="calimc">calcilar imc</string>
+    <!--Calculatorapp-->
+    <string name="Introduce_num">Introduce los números:</string>
+    <string name="num1">Numero 1:</string>
+    <string name="num2">Numero 2:</string>
+    <!--Conversorapp-->
+    <string name="tvSeleccionarMoneda">Selecciona la moneda a la que quiere convertir</string>
+    <string name="resultado">Resultado: </string>
     <!--IMCapp-->
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>

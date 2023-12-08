@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".imc.ResultadoIMCActivity"
     android:padding="16dp"
-    android:background="#1B4049">
+    android:background="@color/background">
 
     <TextView
         android:id="@+id/tvTitle"
@@ -78,6 +78,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:backgroundTint="@color/background_btnBlue" />
+        android:backgroundTint="@color/background_btnBlack" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

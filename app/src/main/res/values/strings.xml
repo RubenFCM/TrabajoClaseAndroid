@@ -4,7 +4,7 @@
     <!--Main-->
     <string name="calculos">cálculos</string>
     <string name="conversor">conversor</string>
-    <string name="calimc">calcilar imc</string>
+    <string name="calimc">calcular imc</string>
     <!--Calculatorapp-->
     <string name="Introduce_num">Introduce los números:</string>
     <string name="num1">Numero 1:</string>

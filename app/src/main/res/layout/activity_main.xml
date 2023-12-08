@@ -7,7 +7,7 @@
     tools:context=".MainActivity"
     android:background="@color/background">
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/btnCalculosApp"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
@@ -15,36 +15,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="@color/black"
+        app:backgroundTint="@null"
+        android:background="@drawable/custom_button"
         android:textColor="@color/white"
         android:layout_marginTop="260dp"
         />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/btnConversorApp"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="16dp"
+        android:layout_marginVertical="22dp"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/black"
+        app:backgroundTint="@null"
+        android:background="@drawable/custom_button"
         android:text="@string/conversor"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCalculosApp" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/btnIMCApp"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:text="@string/calimc"
         app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="@color/black"
+        app:backgroundTint="@null"
+        android:background="@drawable/custom_button"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnConversorApp"
-        android:layout_marginVertical="16dp"/>
+        android:layout_marginVertical="22dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

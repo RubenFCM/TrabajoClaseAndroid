@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--IMC app-->
+    <color name="background_component">#307D95</color>
+    <color name="background_component_selected">#02B2C8</color>
+    <color name="background_app">#0E0B20</color>
+    <color name="background_button">#00BCD4</color>
+    <color name="title_text">#1F1F20</color>
+    <color name="ic_men">#1345AE</color>
+    <color name="ic_girl">#EB1555</color>
+    <color name="background_fab">#ff6200EE</color>
+    <color name="background_btnBlue">#191919</color>
+
+    <color name="bajoPeso">#00BCD4</color>
+    <color name="pesoNormal">#4CAF50</color>
+    <color name="sobrepeso">#CDDC39</color>
+    <color name="obesidad">#EE001C</color>
+</resources>

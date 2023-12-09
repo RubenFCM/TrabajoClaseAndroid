@@ -14,11 +14,13 @@
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         app:cardBackgroundColor="@color/background_component_selected"
-        app:cardCornerRadius="16dp"
+        app:cardCornerRadius="8dp"
         app:layout_constraintEnd_toStartOf="@+id/ViewFemale"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="16dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -45,11 +47,13 @@
         android:id="@+id/ViewFemale"
         android:layout_width="0dp"
         android:layout_height="150dp"
+        android:layout_marginEnd="16dp"
         app:cardBackgroundColor="@color/background_component"
-        app:cardCornerRadius="16dp"
+        app:cardCornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ViewMale"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="16dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -80,12 +84,14 @@
         android:id="@+id/viewHeight"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginTop="32dp"
         app:cardBackgroundColor="@color/background_component"
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ViewMale">
+        app:layout_constraintTop_toBottomOf="@+id/ViewMale"
+        app:cardElevation="16dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -99,6 +105,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/height"
                 android:textAllCaps="true"
+                android:textStyle="bold"
                 android:textColor="@color/title_text" />
 
             <TextView
@@ -116,7 +123,14 @@
                 android:layout_height="wrap_content"
                 android:stepSize="1"
                 android:valueFrom="120"
-                android:valueTo="200" />
+                android:valueTo="200"
+                app:trackColorInactive="@color/background"
+                app:trackColorActive="@color/background_button"
+                app:haloColor="@color/background"
+                app:haloRadius="16dp"
+                app:thumbElevation="12dp"
+                app:thumbColor="#3EAF98"
+                app:tickVisible="false"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
 
@@ -127,12 +141,14 @@
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/background_component"
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toStartOf="@id/viewAge"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewHeight">
+        app:layout_constraintTop_toBottomOf="@+id/viewHeight"
+        app:cardElevation="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -170,8 +186,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:backgroundTint="@color/background_button"
+                    android:backgroundTint="@color/background_component_selected"
                     android:src="@drawable/ic_men"
+                    app:elevation="6dp"
                     app:maxImageSize="40dp"
                     app:tint="@color/white" />
 
@@ -179,10 +196,11 @@
                     android:id="@+id/btnPlusWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/background_button"
+                    android:backgroundTint="@color/background_component_selected"
                     android:src="@drawable/ic_sum"
                     app:maxImageSize="40dp"
-                    app:tint="@color/white" />
+                    app:tint="@color/white"
+                    app:elevation="6dp"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
         </LinearLayout>
@@ -200,7 +218,8 @@
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/viewWeigth"
-        app:layout_constraintTop_toBottomOf="@+id/viewHeight">
+        app:layout_constraintTop_toBottomOf="@+id/viewHeight"
+        app:cardElevation="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -237,18 +256,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:backgroundTint="@color/background_button"
+                    android:backgroundTint="@color/background_component_selected"
                     android:src="@drawable/ic_men"
                     app:maxImageSize="40dp"
+                    app:elevation="6dp"
                     app:tint="@color/white" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnPlusAge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/background_button"
+                    android:backgroundTint="@color/background_component_selected"
                     android:src="@drawable/ic_sum"
                     app:maxImageSize="40dp"
+                    app:elevation="6dp"
                     app:tint="@color/white" />
             </androidx.appcompat.widget.LinearLayoutCompat>
         </LinearLayout>
@@ -266,6 +287,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:backgroundTint="@color/background_btnBlack"
+        app:backgroundTint="@null"
+        android:background="@drawable/custom_button"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

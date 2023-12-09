@@ -32,7 +32,7 @@ class ResultadoIMCActivity : AppCompatActivity() {
     }
     private fun iniListener(){
         btnRecalculate.setOnClickListener {
-            onBackPressed()
+            onBackPressedDispatcher.onBackPressed()
         }
     }
     private fun initUI(resultado:Double){

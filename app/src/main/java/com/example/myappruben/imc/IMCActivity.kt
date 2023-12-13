@@ -3,10 +3,15 @@ package com.example.myappruben.imc
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
+import com.example.myappruben.CalculatorActivity.CalculatorActivity
+import com.example.myappruben.ConversorActivity.ConversorActivity
+import com.example.myappruben.MainActivity
 import com.example.myappruben.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.internal.ViewUtils.getBackgroundColor
@@ -44,6 +49,31 @@ class IMCActivity : AppCompatActivity() {
         initComponent()
         initListener()
         initUI()
+    }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_Home -> {
+                navigateToHome()
+                true
+            }
+            R.id.action_Calculator -> {
+                navigateToCalculatorApp()
+                true
+            }
+            R.id.action_Conversor -> {
+                navigateToConversorApp()
+                true
+            }R.id.action_IMC -> {
+                navigateToIMCApp()
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     private fun initComponent(){
@@ -136,5 +166,22 @@ class IMCActivity : AppCompatActivity() {
             R.color.background_component
         }
         return ContextCompat.getColor(this,colorReference)
+    }
+    private fun navigateToIMCApp() {
+        val intent = Intent(this, IMCActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToCalculatorApp() {
+        val intent = Intent(this, CalculatorActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToConversorApp() {
+        val intent = Intent(this, ConversorActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToHome() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
     }
 }

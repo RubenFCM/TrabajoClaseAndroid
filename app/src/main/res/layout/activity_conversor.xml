@@ -28,6 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal|number"
+                android:maxLength="9"
                 android:hint="Introduce la cantidad de €"
                 android:textColor="@color/white"
                 android:textColorHint="#BABABA"
@@ -118,10 +119,6 @@
                     android:textSize="40sp"
                     />
             </androidx.appcompat.widget.LinearLayoutCompat>
-
-
         </LinearLayout>
-
-
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

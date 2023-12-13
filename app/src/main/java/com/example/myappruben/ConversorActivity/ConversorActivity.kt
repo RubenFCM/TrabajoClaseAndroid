@@ -1,10 +1,16 @@
 package com.example.myappruben.ConversorActivity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.EditText
 import android.widget.TextView
+import com.example.myappruben.CalculatorActivity.CalculatorActivity
+import com.example.myappruben.MainActivity
 import com.example.myappruben.R
+import com.example.myappruben.imc.IMCActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.text.DecimalFormat
 
@@ -22,6 +28,31 @@ class ConversorActivity : AppCompatActivity() {
         setContentView(R.layout.activity_conversor)
         initComponent()
         initListener()
+    }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_Home -> {
+                navigateToHome()
+                true
+            }
+            R.id.action_Calculator -> {
+                navigateToCalculatorApp()
+                true
+            }
+            R.id.action_Conversor -> {
+                navigateToConversorApp()
+                true
+            }R.id.action_IMC -> {
+                navigateToIMCApp()
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     private fun initComponent(){
@@ -54,5 +85,22 @@ class ConversorActivity : AppCompatActivity() {
             val df = DecimalFormat("#.##")
             "${df.format((num1 * 0.87) * 100.0 / 100.0)} $".also { tvResultadoConversion.text = it }
         }
+    }
+    private fun navigateToIMCApp() {
+        val intent = Intent(this, IMCActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToCalculatorApp() {
+        val intent = Intent(this, CalculatorActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToConversorApp() {
+        val intent = Intent(this, ConversorActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToHome() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
     }
 }

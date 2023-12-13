@@ -25,11 +25,13 @@
         <activity
             android:name=".ConversorActivity.ConversorActivity"
             android:exported="false"
-            android:theme="@style/Themee.PruebasDeAprendido.AppsSinActionbar" />
+            android:label="Conversor"
+            />
         <activity
             android:name=".CalculatorActivity.CalculatorActivity"
             android:exported="false"
-            android:theme="@style/Themee.PruebasDeAprendido.AppsSinActionbar" />
+            android:label="Cálculos"
+            />
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".CalculatorActivity.CalculatorActivity"
     android:background="@color/background">
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cvSumar"
         android:layout_width="match_parent"
@@ -42,6 +43,7 @@
                 />
             <EditText
                 android:inputType="numberDecimal|number"
+                android:maxLength="10"
                 android:id="@+id/numUno"
                 android:textColor="@color/white"
                 android:layout_width="match_parent"
@@ -60,12 +62,15 @@
                 android:inputType="numberDecimal|number"
                 android:id="@+id/numDos"
                 android:textColor="@color/white"
+                android:maxLength="10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+    
     <androidx.cardview.widget.CardView
         android:id="@+id/cvOperaciones"
         android:layout_width="match_parent"
